@@ -11,7 +11,7 @@ import (
 	"github.com/manimovassagh/shortenURLFiberRedis/routes"
 )
 
-func setupRoutes(app *fiber.app) {
+func setupRoutes(app *fiber.App) {
 	app.Get("/:url", routes.ResolveURL)
 	app.Post("/api/v1", routes.ShortenURL)
 

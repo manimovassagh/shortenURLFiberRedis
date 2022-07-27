@@ -35,4 +35,7 @@ func ShortenURL(c *fiber.Ctx) error {
 
 		return c.Status(fiber.StatusServiceUnavailable).JSON(fiber.Map{"error": "You cant Hack This system Bitch :) "})
 	}
+
+	body.URL = helpers.EnforceHTTP(body.URL)
+
 }

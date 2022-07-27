@@ -1,5 +1,5 @@
 package routes
 
-func ResolveURL() {
-
+func ResolveURL() string {
+	return "Test"
 }
